@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Navbar from './components/navbar.js'
+import Sidebar from './components/sidebar.js'
+import Menuparent from './components/menuParent.js'
+import Viewparent from './components/viewParent.js'
 
 ReactDOM.render(
-    <h1>Team Popcorn</h1>, 
+  <div className ="root">
+    <Menuparent />
+
+    </div>,
     document.getElementById('root'));
