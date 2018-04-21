@@ -9,7 +9,7 @@ class Header extends React.Component{
         let style = {
             backgroundColor: '#337782',
             width: '100%',
-            height: '38px',
+            height: '5vh',
             display: 'flex'
           }
 

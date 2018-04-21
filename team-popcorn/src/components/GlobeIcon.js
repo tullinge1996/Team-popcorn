@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class NotificationIcon extends React.Component{
+class GlobeIcon extends React.Component{
     render(){
         var FontAwesome = require('react-fontawesome'); // funkar inte?
         let styleFontAwesome = {
@@ -10,13 +10,13 @@ class NotificationIcon extends React.Component{
         }
 
         let linkStyle = {
-            alignSelf: 'center',
-            marginLeft: '41px'
+            display: 'table',
+            alignSelf: 'center'
         }
 
         return(
-            <a href="#" style={linkStyle}><FontAwesome className='fa-bell' style={styleFontAwesome} /></a>
+            <a href="#" style={linkStyle}><FontAwesome className='fas fa-globe' style={styleFontAwesome} /></a>
         );
     }
 }
-export default NotificationIcon
+export default GlobeIcon
