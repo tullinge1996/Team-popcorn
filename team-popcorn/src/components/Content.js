@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Nav from './Nav.js';
+import Main from './Main.js';
 
 class Content extends React.Component{
     render(){
@@ -15,6 +16,7 @@ class Content extends React.Component{
         return(
             <content style={style}>
                 <Nav />
+                <Main />
             </content> 
         );
     }
