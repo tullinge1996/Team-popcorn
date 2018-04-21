@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+let rootDiv = document.getElementById('root');
 ReactDOM.render(
-    <h1>Team Popcorn</h1>, 
-    document.getElementById('root'));
+    <div id="container">
+    </div>,
+    rootDiv
+);
