@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Header from './Header'
-import Menu from './Menu'
-import Main from './Main'
+import 'font-awesome/css/font-awesome.min.css';
 import './index.css'
+import Header from './components/Header';
 
 ReactDOM.render(
-    <div className="grid-container">
+    <div>
         <Header />
-        <Menu />
-        <Main />
     </div>, 
     document.getElementById('root')
 )
