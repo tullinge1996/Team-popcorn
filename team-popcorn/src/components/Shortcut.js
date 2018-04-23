@@ -51,8 +51,8 @@ class Shortcut extends React.Component{
 
         return(
             <div style={this.state.hovered ? hoveredStyle : style}  onMouseOver={this.mouseOver} onMouseOut={this.mouseOut} >
-                <a href="#" style={link}><h2>{this.props.h2}</h2></a>
-                <a href="#" style={link}><h1>{this.props.h1}</h1></a>
+                <a href="#" style={link}><h3>{this.props.h2}</h3></a>
+                <a href="#" style={link}><h2>{this.props.h1}</h2></a>
             </div>
         );
     }
