@@ -1,22 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NotificationIcon from './NotificationIcon.js';
-import InfoIcon from './InfoIcon.js';
+import Icon from './Icon.js';
 
 class Header extends React.Component{
     render(){
 
         let style = {
             backgroundColor: '#337782',
-            width: '100%',
             height: '5vh',
             display: 'flex'
-          }
+        }
 
         return(
             <header style={style}>
-                <NotificationIcon />
-                <InfoIcon />
+                <Icon iconName='' type='granditudeLogo'/>
+                <Icon iconName='fa fa-bell' type='headerIcon'/>
+                <Icon iconName='fa fa-info-circle' type='headerIcon'/>
             </header> 
         );
     }

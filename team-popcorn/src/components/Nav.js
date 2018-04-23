@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ChartIcon from './ChartIcon.js';
-import GlobeIcon from './GlobeIcon.js';
+import Icon from './Icon.js';
 
 class Nav extends React.Component{
     render(){
@@ -16,8 +15,8 @@ class Nav extends React.Component{
 
         return(
             <nav style={style}>
-            <ChartIcon />
-            <GlobeIcon />
+            <Icon iconName='fa fa-bar-chart' type='sidebar' />
+            <Icon iconName='fa fa-database' type='sidebar' />
             </nav> 
         );
     }
