@@ -7,14 +7,14 @@ render(){
   let navStyles ={
     display: "flex",
     flexDirection: "row",
-    justifyContent:"space-between",
+    justifyContent:"flex-start",
     width:"100%",
     height: "3vh",
     backgroundColor: "#888"
   }
   return(
     <navbar style = {navStyles}>
-    <p>G</p><p>2</p>
+    <p>G</p><p>G</p>
     </navbar>
   );
 

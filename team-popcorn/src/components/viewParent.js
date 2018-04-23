@@ -9,7 +9,7 @@ render(){
   let viewStyles ={
     display: "flex",
     flexDirection: "column",
-    justifyContent:"space-around",
+    justifyContent:"center",
     width:"98.5%",
     height:"97vh",
     backgroundColor: "#eee"
@@ -18,7 +18,7 @@ render(){
      display:"flex",
      flexDirection:"row",
      justifyContent:"space-around",
-     alignItems: "center",
+     alignItems: "flex-end",
      width:"100",
      height:"40vh",
    }
@@ -26,21 +26,17 @@ render(){
    let contStyles={
      width: "400px",
      height: "300px",
-     backgroundColor:"#fff",
-     textAlign: "center"
+     backgroundColor:"#eee",
+     textAlign: "center",
+     fontSize: "20px",
    }
   return(
     <div style ={viewStyles}>
         <section style = {sectionStyles}>
             <div style = {contStyles}> Sales <br /> sales</div>
             <div style = {contStyles}> Sales <br /> sales</div>
-            <div style = {contStyles}> Sales <br /> sales</div>
         </section>
-        <section style = {sectionStyles}>
-            <div style = {contStyles}> Sales <br /> sales</div>
-            <div style = {contStyles}> Sales <br /> sales</div>
-            <div style = {contStyles}> Sales <br /> sales</div>
-      </section>
+
     </div>
   );
 

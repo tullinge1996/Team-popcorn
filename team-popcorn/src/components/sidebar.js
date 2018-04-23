@@ -13,7 +13,7 @@ render(){
   }
   return(
     <navbar style = {sideStyles}>
-    <p>G</p><p>2</p>
+    <p>G</p><p>G</p>
     </navbar>
   );
 
