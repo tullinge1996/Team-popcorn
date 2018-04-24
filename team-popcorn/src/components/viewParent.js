@@ -4,12 +4,7 @@ import master from '../styles/master.css'
 import Shortcut from './shortcut'
 
 class Viewparent extends React.Component{
-  constructor(props){
-    super(props);
-    var states =  {
-      hovered:"false"
-    }
-  }
+
 render(){
 
   let viewStyles ={
@@ -18,18 +13,16 @@ render(){
     flexDirection: "row",
     justifyContent:"space-around",
     alignItems:"center",
-
-
     width:"98.5%",
     height:"96vh",
-    backgroundColor: "#eee",
+    backgroundColor:'#F8F8F8',
     flexWrap: "wrap"
   }
 
 
   return(
     <div style ={viewStyles}>
-        <Shortcut label="Sales" submenu =" products" style ={{}}/>
+        <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
