@@ -15,6 +15,7 @@ render(){
   }
   return(
     <navbar style = {sideStyles}>
+
       <Icon iconName = "fa fa-bar-chart"/>
       <Icon iconName = "fa fa-database"/>
     </navbar>

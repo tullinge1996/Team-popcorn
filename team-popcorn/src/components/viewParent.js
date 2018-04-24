@@ -14,14 +14,18 @@ render(){
 
   let viewStyles ={
     display: "flex",
+
     flexDirection: "row",
     justifyContent:"space-around",
     alignItems:"center",
+
+
     width:"98.5%",
     height:"96vh",
     backgroundColor: "#eee",
     flexWrap: "wrap"
   }
+
 
   return(
     <div style ={viewStyles}>
@@ -31,6 +35,7 @@ render(){
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
+
     </div>
   );
 
