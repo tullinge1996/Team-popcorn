@@ -20,15 +20,18 @@ min-height: 4vh;
   min-width: 100%;
   text-align: center;
 }
-.ColContent{
-  background-color: Orange;
+.ColContent:hover{
+  background-color:#a6a6a6 ;
+  transition: 0.5s ease;
 }
-.ColContent2{
-  background-color: yellow
+.ColContent2:hover{
+  background-color: #a6a6a6;
+  transition: 0.5s ease;
 
 }
-.ColContent3{
-  background-color: purple;
+.ColContent3:hover{
+  background-color:#a6a6a6;
+  transition: 0.5s ease;
 }
 .RowContent{
   padding-top: 10px;
@@ -44,4 +47,12 @@ min-height: 4vh;
 }
 .ExitButton{
   padding-top: 1900%;
+}
+.textThing a:hover{
+  text-decoration: none;
+  color:#347883;
+  background-color: transparent;
+}
+.textThing a{
+  color: #347883;
 }
