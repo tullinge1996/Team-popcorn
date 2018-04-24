@@ -11,12 +11,12 @@ min-height: 4vh;
 .SideBarContainer{
   background-color: #347883;
   width: 4vh;
-  min-height: 100vh;
+  min-height: 96vh;
   float: left;
   text-align: center;
 }
 .ContentContainer{
-  min-height: 50vh;
+  min-height: 47vh;
   min-width: 100%;
   text-align: center;
 }
