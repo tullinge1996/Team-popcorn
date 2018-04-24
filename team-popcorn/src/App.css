@@ -45,9 +45,6 @@ min-height: 4vh;
 .RowContent h2{
   color: #347883;
 }
-.ExitButton{
-  padding-top: 1900%;
-}
 .textThing a:hover{
   text-decoration: none;
   color:#347883;
