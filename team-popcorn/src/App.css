@@ -1,0 +1,47 @@
+.HeaderContainer p{
+  display: inline-block;
+  padding-left: 7px;
+  padding-right: 7px;
+  margin-bottom: 0;
+}
+.HeaderContainer{
+background-color: #347883;
+min-height: 4vh;
+}
+.SideBarContainer{
+  background-color: #347883;
+  width: 4vh;
+  min-height: 100vh;
+  float: left;
+  text-align: center;
+}
+.ContentContainer{
+  min-height: 50vh;
+  min-width: 100%;
+  text-align: center;
+}
+.ColContent{
+  background-color: Orange;
+}
+.ColContent2{
+  background-color: yellow
+
+}
+.ColContent3{
+  background-color: purple;
+}
+.RowContent{
+  padding-top: 10px;
+  padding-left: 15px;
+  min-height: 40vh;
+}
+.RowContent h4{
+  padding-top: 25%;
+  color: #347883;
+}
+.RowContent h2{
+  color: #347883;
+}
+.ExitButton{
+  padding-top: 1900%;
+}
