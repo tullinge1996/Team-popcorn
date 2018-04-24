@@ -10,12 +10,6 @@ class SideBar extends Component {
       paddingBottom:"12px",
 
     }
-    var iconStyle2={
-      paddingLeft:"15px",
-      paddingTop:"12px",
-      paddingRight:"3px",
-
-    }
     return(
 <div className ="SideBarContainer">
 <i className="far fa-chart-bar fa-lg"  style={iconStyle}></i>
