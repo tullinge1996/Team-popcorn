@@ -2,20 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import master from '../styles/master.css'
 import Icon from './icon.js'
-class Sidebar extends React.Component{
 
+ var sideStyles ={
+  display: "flex",
+  flexDirection: "column",
+  justifyContent:"flex-start",
+  width:"2%",
+  height: "96vh",
+  backgroundColor: "#888",
+  alignItems: "center",
+  display:"none"
+}
+export default class Expandingnavbar extends React.Component{
 render(){
-  let sideStyles ={
-    display: "flex",
-    flexDirection: "column",
-    justifyContent:"flex-start",
-    width:"2%",
-    height: "96vh",
-    backgroundColor: "#888",
-    alignItems: "center"
-  }
+
   return(
-    <navbar style = {sideStyles}>
+    <navbar style =  {sideStyles}>
 
       <button  onClick={alert}><Icon iconName = "fa fa-bar-chart"/></button>
       <button onClick={alert}><Icon iconName = "fa fa-database"/></button>
@@ -24,4 +26,3 @@ render(){
 
 }
 }
-export default Sidebar

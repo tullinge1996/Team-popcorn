@@ -4,6 +4,7 @@ import master from '../styles/master.css'
 import Navbar from './navbar.js'
 import Sidebar from './sidebar.js'
 import Viewparent from './viewParent.js'
+import Expandingnavbar from './expandingNavbar'
 class Menuparent extends React.Component{
 render(){
 
@@ -24,6 +25,7 @@ render(){
     <Navbar />
       <div style = {midStyles}>
           <Sidebar />
+          <Expandingnavbar />
           <Viewparent />
       </div>
     </div>

@@ -16,8 +16,8 @@ render(){
   }
   return(
     <navbar style = {navStyles}>
-      <Icon iconName = "fa fa-bell" />
-      <Icon iconName = "fa fa-exclamation-circle" />
+      <button onClick={alert}><Icon iconName = "fa fa-bell" /></button>
+      <button onClick={alert}><Icon iconName = "fa fa-exclamation-circle" /></button>
     </navbar>
   );
 
