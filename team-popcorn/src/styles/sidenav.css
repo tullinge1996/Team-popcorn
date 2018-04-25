@@ -1,0 +1,11 @@
+.sidenav {
+    background-color: pink;
+    position: fixed;
+    height: 100%;
+    width: 30px;
+    background-color: teal;
+}
+
+.fa-icon-sidenav {
+    color: #F8F8F8;
+}

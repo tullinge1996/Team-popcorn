@@ -1,0 +1,20 @@
+.header {
+    background-color: teal;
+}
+
+.fa-icon-header {
+    margin-right: 20px;
+    color: #F8F8F8;
+    font-size: 1em;
+    padding-bottom: 3px;
+}
+
+.granditudeLogo {
+    height: 20px;
+    margin-right: 20px;
+    margin-left: 3px;
+}
+
+.left-icons {
+    padding: 5px;
+}

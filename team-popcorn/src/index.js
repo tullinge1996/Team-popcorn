@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import 'font-awesome/css/font-awesome.min.css';
-import './index.css'
-import Header from './components/Header';
+import './styles/index.css'
+import Header from './components/Header'
+import Sidenav from './components/Sidenav'
 
 ReactDOM.render(
     <div>
@@ -10,3 +10,4 @@ ReactDOM.render(
     </div>, 
     document.getElementById('root')
 )
+
