@@ -15,8 +15,7 @@ export default class Header extends Component {
                     <img src={granditudeLogo} className="granditudeLogo" alt=""/>
                     <FontAwesomeIcon className="fa-icon-header" icon={faBell} />
                     <FontAwesomeIcon className="fa-icon-header" icon={faInfoCircle} />
-                    <AwesomeIcon iconName="faBell" />
-                    <AwesomeIcon iconName="rump-Nisse" />
+                    <AwesomeIcon iconObject={faBell} />
                 </div>
             </div>
         )
