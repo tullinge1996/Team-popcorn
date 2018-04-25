@@ -78,6 +78,7 @@ min-height: 4vh;
   }
   .SideBarContainer ul li:hover{
   background: #5BC6D5;
+
   }
 .SideBarContainer ul li a{
   position: relative;
@@ -99,7 +100,8 @@ min-height: 4vh;
   color: white;
   padding-bottom: 8px;
   text-align: left;
-  padding-left: 20px;
+  padding-left: 10px;
+  transition: 0.3s ease;
 
 }
 ul li:hover .secondUl{
@@ -107,4 +109,16 @@ ul li:hover .secondUl{
   opacity: 1;
   visibility: visible;
   z-index: 1;
+}
+.secondUl li button{
+  float: right;
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+#arrowColor{
+  color: white;
 }
