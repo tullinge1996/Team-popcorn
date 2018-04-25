@@ -57,13 +57,54 @@ min-height: 4vh;
     padding-left:10px;
     padding-top:12px,;
     padding-right:3px;
+    color: white;
   }
 #iconStyle2 {
   padding-left:15px;
   padding-top:12px;
   padding-right:3px;
+  color: white;
   }
 #iconStyle3{
   padding-top:5px;
   padding-bottom:12px;
+  color: white;
   }
+
+  .SideBarContainer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .SideBarContainer ul li:hover{
+  background: #5BC6D5;
+  }
+.SideBarContainer ul li a{
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.secondUl{
+  padding:0;
+  position: absolute;
+  top: 39px;
+  left:39px;
+  width: 200px;
+  display: none;
+  visibility: hidden;
+}
+.secondUl li{
+  background: #494E57;
+  display: block;
+  color: white;
+  padding-bottom: 8px;
+  text-align: left;
+  padding-left: 20px;
+
+}
+ul li:hover .secondUl{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
