@@ -53,3 +53,17 @@ min-height: 4vh;
 .textThing a{
   color: #347883;
 }
+#iconStyle {
+    padding-left:10px;
+    padding-top:12px,;
+    padding-right:3px;
+  }
+#iconStyle2 {
+  padding-left:15px;
+  padding-top:12px;
+  padding-right:3px;
+  }
+#iconStyle3{
+  padding-top:5px;
+  padding-bottom:12px;
+  }

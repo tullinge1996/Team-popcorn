@@ -1,19 +1,13 @@
 import React,{Component} from "react";
-import "../App.css";
 
 
 
 class SideBar extends Component {
   render(){
-    var iconStyle={
-      paddingTop:"5px",
-      paddingBottom:"12px",
-
-    }
     return(
 <div className ="SideBarContainer">
-<i className="far fa-chart-bar fa-lg"  style={iconStyle}></i>
-<i className="far fa-money-bill-alt fa-lg" style={iconStyle}></i>
+<i  id ="iconStyle3" className="far fa-chart-bar fa-lg"></i>
+<i  id ="iconStyle3" className="far fa-money-bill-alt fa-lg"></i>
 </div>
     );
   }
