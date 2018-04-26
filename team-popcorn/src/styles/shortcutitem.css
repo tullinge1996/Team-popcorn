@@ -3,4 +3,10 @@
     width: 33.333333%;
     text-align: center;
     padding-top: 100px;
+    font-family: "Helvetica Neue";
+    color: teal;
+}
+
+.short-cut-item:hover {
+    background-color: #FFF;
 }
