@@ -1,11 +1,21 @@
 .sidenav {
-    background-color: pink;
-    position: fixed;
-    height: 100%;
-    width: 30px;
     background-color: teal;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 7px;
 }
 
 .fa-icon-sidenav {
     color: #F8F8F8;
+    margin-top: 14px;
+    margin-right: 5px;
+}
+
+.top-icons * {
+    display: block;
+}
+
+.bottom-icons {
+   margin-bottom: 5px;
 }

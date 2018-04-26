@@ -2,3 +2,12 @@ body {
     margin: 0;
     background-color: #F8F8F8;
 }
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mainContainer {
+
+}

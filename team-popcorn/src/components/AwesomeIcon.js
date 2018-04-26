@@ -2,15 +2,15 @@ import React, {Component} from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 export default class AwesomeIcon extends Component {
-    constructor(props){
-        super(props)
-        console.log(this.props.iconObject.iconName)
-    }
     render () {
         return (
-            <div>
-                <FontAwesomeIcon icon={this.props.iconObject} />
-            </div>
+            <a href="#">
+                <FontAwesomeIcon onClick={this.clickedIcon} className={this.props.iconCssClass} icon={this.props.iconObject} />  
+            </a>
         )
+    }
+
+    clickedIcon = () => {
+        alert(`You clicked the ${this.props.iconObject.iconName} icon`)
     }
 }
