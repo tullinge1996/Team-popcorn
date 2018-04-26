@@ -32,7 +32,7 @@ const Shortcut = styled.div `
     }
 
    >h2{
-    margin-top:150px;
+    margin-top:20%;
     text-align:center;
    }
 
@@ -45,7 +45,7 @@ const Shortcut = styled.div `
 
 class main extends React.Component{
     render(){
-      
+
         return(
   <Main>
    <Shortcut>
