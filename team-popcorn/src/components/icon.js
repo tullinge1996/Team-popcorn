@@ -6,7 +6,7 @@ export default class Icon extends React.Component{
 render(){
   let iconStyles ={
       fontSize:"20px",
-
+      color: "white",
   }
   return(
     <div>

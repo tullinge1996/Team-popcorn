@@ -41,8 +41,8 @@ class Shortcut extends React.Component{
 
         let link = {
             textDecoration: 'none',
-
-            color: '#337782'
+            color: '#337782',
+            fontSize: '1.4em',
         }
 
         return(

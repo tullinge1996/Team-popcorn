@@ -28,7 +28,6 @@ render(){
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
         <Shortcut label="Sales" submenu =" products"/>
-
     </div>
   );
 

@@ -11,7 +11,7 @@ render(){
     justifyContent:"flex-start",
     width:"100%",
     height: "4vh",
-    backgroundColor: "#888",
+    backgroundColor: "teal",
     alignItems: "center",
   }
   return(
