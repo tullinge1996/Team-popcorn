@@ -9,6 +9,7 @@ class SideBar extends Component {
   <ul>
 <li><a href="#"><i  id ="iconStyle3" className="far fa-chart-bar fa-lg"></i></a>
 <ul className ="secondUl">
+  <input type = "text" placeholder ="Search"className="searchBar"/>
 <li>Dashboard<button><i id="arrowColor" className="fas fa-arrow-down"></i></button></li>
 <li>Marketing Analytics<button><i id="arrowColor" className="fas fa-arrow-down"></i></button></li>
 <li>Financial Analytics<button><i id="arrowColor" className="fas fa-arrow-down"></i></button></li>

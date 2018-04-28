@@ -122,3 +122,7 @@ ul li:hover .secondUl{
 #arrowColor{
   color: white;
 }
+.searchBar{
+  width: 200px;
+  height: 32px;
+}
