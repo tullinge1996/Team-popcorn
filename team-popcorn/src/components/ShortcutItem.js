@@ -10,15 +10,15 @@ export default class ShortcutItem extends Component {
     }
     render() {
         return (
-            <div onClick={this.clickedMe} style={this.state.hovered ? styles.hoveredStyle : styles.notHoveredStyle} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
+            <div onClick={this.props.callbackFromApp ? this.clickedIcon : null} style={this.state.hovered ? styles.hoveredStyle : styles.notHoveredStyle} onMouseOver={this.mouseOver} onMouseOut={this.mouseOut}>
                 <h3>{this.props.h3}</h3>
                 <h2>{this.props.h2}</h2>
             </div>
         )
     }
 
-    clickedMe = () => {
-        alert(`You clicked ${this.props.h2}`)
+    clickedIcon = () => {
+        this.props.callbackFromApp()
     }
 
     mouseOver = () => {

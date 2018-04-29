@@ -9,10 +9,10 @@ export default class Header extends Component {
     render() {
         return(
             <div style={styles.wrapper}>
-                <div>
+                <div style={styles.leftIcons}>
                     <img src={granditudeLogo} style={styles.granditudeLogo} />
-                    <AwesomeIcon iconObject={faBell} iconPlacement="header" />
-                    <AwesomeIcon iconObject={faInfoCircle} iconPlacement="header" />
+                    <AwesomeIcon iconObject={faBell} /> 
+                    <AwesomeIcon iconObject={faInfoCircle} /> 
                 </div>
             </div>
         )
@@ -21,10 +21,15 @@ export default class Header extends Component {
 
 const styles = {
     wrapper: {
-        backgroundColor: 'teal',
-        padding: '5px'
+        backgroundColor: 'teal'
     },
     granditudeLogo: {
-        height: '20px'
+        height: '20px',
+        padding: '.4em'
+    },
+    leftIcons: {
+        display: 'flex',
+        justifyContent: 'space-between',
+        width: '120px'
     }
 }

@@ -2,35 +2,39 @@ import React, {Component} from 'react'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 
 export default class AwesomeIcon extends Component {
-    constructor(props){
+    constructor(props) {
         super(props)
 
-        if(this.props.iconPlacement === "header"){
-            styles.wrapper = {
-                color: '#FFF',
-                marginLeft: '15px',
-                paddingBottom: '2px'
-            }
-        }
-        else if (this.props.iconPlacement === "sideNav"){
-            styles.wrapper = {
-                color: '#FFF',
-                marginLeft: '8px',
-                marginTop: '15px'
-            }
+        this.state = {
+            isClicked: false
         }
     }
-    render () {
+    render() {
         return (
-            <a href="#">
-                <FontAwesomeIcon onClick={this.clickedIcon} icon={this.props.iconObject} style={styles.wrapper} />
-            </a>
+            <FontAwesomeIcon 
+                icon={this.props.iconObject} 
+                onClick={this.props.callbackFromApp ? this.clickedIcon : null}
+                style= {this.state.isClicked ? styles.isClicked : styles.isNotClicked}
+            />
         )
     }
 
     clickedIcon = () => {
-        alert(`You clicked the ${this.props.iconObject.iconName} icon`)
+        this.props.callbackFromApp(`${this.props.iconObject.iconName}`)
+        this.setState({
+            isClicked: !this.state.isClicked
+        })
     }
 }
 
-const styles = {}
+const styles = {
+    isClicked: {
+        color: '#F8F8F8',
+        backgroundColor: '#00CED1',
+        padding: '.5em'
+    },
+    isNotClicked: {
+        color: '#F8F8F8',
+        padding: '.5em'
+    }
+}

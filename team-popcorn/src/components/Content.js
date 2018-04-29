@@ -5,7 +5,7 @@ export default class Content extends Component {
     render() {
         return (
             <div style={styles.wrapper}>
-                <ShortcutItem h3="Finanial Analytics" h2="Sales Overview" />
+                <ShortcutItem h3="Finanial Analytics" h2="Sales Overview" callbackFromApp={this.props.callbackFromApp} />
                 <ShortcutItem h3="Product Analytics" h2="Sales Funnel" />
                 <ShortcutItem h3="Product Analytics" h2="Product Inventory" />
                 <ShortcutItem h3="Price Analytics" h2="Optimisation" />
@@ -19,7 +19,7 @@ export default class Content extends Component {
 const styles = {
     wrapper: {
         display: 'flex',
-        minHeight: '97vh',
+        minHeight: '98vh',
         flexWrap: 'wrap',
         flexGrow: '1'
     }

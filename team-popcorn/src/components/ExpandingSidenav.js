@@ -4,7 +4,12 @@ export default class ExpandingSidenav extends Component {
     render() {
         return (
             <div style={styles.wrapper}>
-                Expanding Side Nav
+                <form>
+                    <input placeholder="Search" style={styles.input}></input>
+                </form>
+                <h3>
+                {this.props.openedBy}
+                </h3>
             </div>
         )
     }
@@ -12,6 +17,10 @@ export default class ExpandingSidenav extends Component {
 
 const styles = {
     wrapper: {
-        backgroundColor: 'grey'
+        backgroundColor: 'grey',
+        fontFamily: 'Courier New'
+    },
+    input: {
+        fontSize: '1.35em'
     }
 }
