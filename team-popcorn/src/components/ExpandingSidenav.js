@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 
 export default class ExpandingSidenav extends Component {
+    componentDidMount() {
+        console.log(this.props.openedBy)
+    }
     render() {
         return (
             <div style={styles.wrapper}>

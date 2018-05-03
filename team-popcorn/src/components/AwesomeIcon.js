@@ -5,25 +5,25 @@ export default class AwesomeIcon extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            isClicked: false
-        }
+        // this.state = {
+        //     isClicked: false
+        // }
     }
     render() {
         return (
             <FontAwesomeIcon 
                 icon={this.props.iconObject} 
-                onClick={this.props.callbackFromApp ? this.clickedIcon : null}
-                style= {this.state.isClicked ? styles.isClicked : styles.isNotClicked}
+                onClick={this.props.callbackFromApp ? this.clickedIcon(this.props.num) : null}
+                style= {this.props.isClicked ? styles.isClicked : styles.isNotClicked}
             />
         )
     }
 
-    clickedIcon = () => {
-        this.props.callbackFromApp(`${this.props.iconObject.iconName}`)
-        this.setState({
-            isClicked: !this.state.isClicked
-        })
+    clickedIcon = (n) => {
+        console.log("clicked icon")
+        console.dir(this.props.iconObject)
+        //this.props.callbackFromApp(`${this.props.iconObject.iconName}`)
+        this.props.callbackFromApp(n)
     }
 }
 

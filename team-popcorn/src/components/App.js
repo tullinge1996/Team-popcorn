@@ -13,12 +13,16 @@ export default class App extends Component {
             dataFromChild: ''
         }
     }
+    componentDidMount() {
+        // console.log(this.state.dataFromChild)
+    }
     render() {
         return (
             <div>
                 <Header/>
+                <div>YO{this.state.dataFromChild}LO</div>
                 <div style={styles.container}>
-                    <Sidenav callbackFromApp={this.toggleHidden}/> 
+                    <Sidenav /> 
                     {!this.state.isHidden && <ExpandingSidenav openedBy={this.state.dataFromChild}/>}
                     <Content callbackFromApp={this.toggleHidden}/>
                 </div>
@@ -31,6 +35,7 @@ export default class App extends Component {
             isHidden: !this.state.isHidden,
             dataFromChild: dataFromChild
         })
+ 
     }
 }
  

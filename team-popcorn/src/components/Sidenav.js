@@ -6,22 +6,42 @@ import faBed from '@fortawesome/fontawesome-free-solid/faBed'
 import AwesomeIcon from './AwesomeIcon'
 
 export default class Sidenav extends Component {
+    constructor(props) {
+        super(props)
+
+        this.state = {FAActive:[
+            false,
+            false,
+            false
+        ]}
+    }
+
     render() {
         return (
             <div style={styles.wrapper}>
                 <div style={styles.topIcons}>
-                    <AwesomeIcon iconObject={faChartBar} 
-                        callbackFromApp={this.props.callbackFromApp} 
+                    <AwesomeIcon isClicked={this.state.FAActive[1]} num={1} iconObject={faChartBar} 
+                    callbackFromApp={this.toggleHidden} 
                     />
-                    <AwesomeIcon iconObject={faDatabase} 
-                        callbackFromApp={this.props.callbackFromApp} 
+                    <AwesomeIcon isClicked={this.state.FAActive[2]} num={2} iconObject={faDatabase} 
+                    callbackFromApp={this.toggleHidden}
                     />
                 </div>
                 <div style={styles.bottomIcons}>
-                    <AwesomeIcon iconObject={faPowerOff} /> 
+                    <AwesomeIcon isClicked={this.state.FAActive[3]} num={3} iconObject={faPowerOff} /> 
                 </div>
             </div>
         )
+    }
+
+    toggleHidden = (n) => {
+        console.log(n)
+        // this.setState({
+        //     isHidden: !this.state.isHidden,
+        //     dataFromChild: dataFromChild
+        // })
+        this.state.FAActive[n]=!this.state.FAActive[n]
+ 
     }
 }
 
