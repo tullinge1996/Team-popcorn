@@ -5,25 +5,19 @@ export default class AwesomeIcon extends Component {
     constructor(props) {
         super(props)
 
-        this.state = {
-            isClicked: false
-        }
     }
     render() {
         return (
             <FontAwesomeIcon 
                 icon={this.props.iconObject} 
-                onClick={this.props.callbackFromApp ? this.clickedIcon : null}
-                style= {this.state.isClicked ? styles.isClicked : styles.isNotClicked}
+                onClick={this.props.callbackFromSidenav ? this.clickedIcon : null}
+                style={this.props.active ? styles.isClicked : styles.isNotClicked}
             />
         )
     }
 
     clickedIcon = () => {
-        this.props.callbackFromApp(`${this.props.iconObject.iconName}`)
-        this.setState({
-            isClicked: !this.state.isClicked
-        })
+        this.props.callbackFromSidenav(this.props)
     }
 }
 
@@ -31,10 +25,12 @@ const styles = {
     isClicked: {
         color: '#F8F8F8',
         backgroundColor: '#00CED1',
-        padding: '.5em'
+        padding: '.5em',
+        width: '15px'
     },
     isNotClicked: {
         color: '#F8F8F8',
-        padding: '.5em'
+        padding: '.5em',
+        width: '15px'
     }
 }

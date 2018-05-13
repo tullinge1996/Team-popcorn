@@ -18,19 +18,26 @@ export default class App extends Component {
             <div>
                 <Header/>
                 <div style={styles.container}>
-                    <Sidenav callbackFromApp={this.toggleHidden}/> 
+                    <Sidenav callbackFromApp={this.dataFromChild}/> 
                     {!this.state.isHidden && <ExpandingSidenav openedBy={this.state.dataFromChild}/>}
-                    <Content callbackFromApp={this.toggleHidden}/>
+                    <Content />
                 </div>
             </div>
         )
     }
 
-    toggleHidden = (dataFromChild) => {
-        this.setState({
-            isHidden: !this.state.isHidden,
-            dataFromChild: dataFromChild
-        })
+    dataFromChild = (data) => {
+        if(data.active){
+            this.setState({
+                isHidden: false,
+                dataFromChild: data.icon.iconName
+            })
+        }
+        else {
+            this.setState({
+                isHidden: true
+            })
+        }
     }
 }
  

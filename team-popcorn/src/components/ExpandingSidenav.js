@@ -7,8 +7,9 @@ export default class ExpandingSidenav extends Component {
                 <form>
                     <input placeholder="Search" style={styles.input}></input>
                 </form>
-                <h3>
-                {this.props.openedBy}
+                <h3 style={styles.content}>
+                This sidebar was opened by: 
+                <p>{this.props.openedBy}</p>
                 </h3>
             </div>
         )
@@ -18,9 +19,14 @@ export default class ExpandingSidenav extends Component {
 const styles = {
     wrapper: {
         backgroundColor: 'grey',
-        fontFamily: 'Courier New'
+        fontFamily: 'Courier New',
+        width: '200px'
     },
     input: {
         fontSize: '1.35em'
+    },
+    content: {
+        padding: '1em',
+        textAlign: 'center'
     }
 }
