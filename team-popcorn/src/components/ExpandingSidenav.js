@@ -2,15 +2,22 @@ import React, {Component} from 'react'
 
 export default class ExpandingSidenav extends Component {
     render() {
+        const content = this.props.openedBy.content
+        const contentHeadings = []
+        content.map((heading) => {
+            contentHeadings.push(
+                <div key={heading} style={styles.li}>{heading}</div>
+            )
+        })
+        console.log(contentHeadings)
         return (
             <div style={styles.wrapper}>
                 <form>
                     <input placeholder="Search" style={styles.input}></input>
                 </form>
-                <h3 style={styles.content}>
-                This sidebar was opened by: 
-                <p>{this.props.openedBy}</p>
-                </h3>
+                <div style={styles.content}>
+                    {contentHeadings}
+                </div>
             </div>
         )
     }
@@ -18,15 +25,17 @@ export default class ExpandingSidenav extends Component {
 
 const styles = {
     wrapper: {
-        backgroundColor: 'grey',
-        fontFamily: 'Courier New',
-        width: '200px'
+        backgroundColor: '#404040',
     },
     input: {
         fontSize: '1.35em'
     },
     content: {
-        padding: '1em',
-        textAlign: 'center'
+        color: '#F8F8F8',
+        listStyleType: 'none'
+    },
+    li: {
+        fontSize: '.9em',
+        margin: '1em'
     }
 }

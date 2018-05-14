@@ -10,13 +10,13 @@ export default class App extends Component {
 
         this.state = {
             isHidden: true,
-            dataFromChild: ''
+            dataFromChild: null
         }
     }
     render() {
         return (
             <div>
-                <Header/>
+                <Header openedBy={this.state.dataFromChild}/>
                 <div style={styles.container}>
                     <Sidenav callbackFromApp={this.dataFromChild}/> 
                     {!this.state.isHidden && <ExpandingSidenav openedBy={this.state.dataFromChild}/>}
@@ -27,15 +27,17 @@ export default class App extends Component {
     }
 
     dataFromChild = (data) => {
+        console.log(data)
         if(data.active){
             this.setState({
                 isHidden: false,
-                dataFromChild: data.icon.iconName
+                dataFromChild: data
             })
         }
         else {
             this.setState({
-                isHidden: true
+                isHidden: true,
+                dataFromChild: null
             })
         }
     }

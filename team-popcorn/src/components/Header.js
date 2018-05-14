@@ -14,6 +14,9 @@ export default class Header extends Component {
                     <AwesomeIcon iconObject={faBell} /> 
                     <AwesomeIcon iconObject={faInfoCircle} /> 
                 </div>
+                <div style={styles.routing}>
+                {this.props.openedBy != null ? this.props.openedBy.name : ""}
+                </div>
             </div>
         )
     }
@@ -21,7 +24,8 @@ export default class Header extends Component {
 
 const styles = {
     wrapper: {
-        backgroundColor: 'teal'
+        backgroundColor: 'teal',
+        display: 'flex'
     },
     granditudeLogo: {
         height: '20px',
@@ -31,5 +35,12 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         width: '120px'
+    },
+    routing: {
+        color: '#F8F8F8',
+        textAlign: 'center',
+        verticalAlign: 'middle',
+        lineHeight: '30px',
+        marginLeft: '15px'
     }
 }

@@ -14,17 +14,35 @@ export default class Sidenav extends Component {
                 {
                     id: 1,
                     icon: faChartBar,
-                    active: false
+                    active: false,
+                    content: [
+                        "Dashboard",
+                        "Marketing Analytics",
+                        "Financial Analytics",
+                        "Product Analytics",
+                        "Price Analytics",
+                        "Customer Analysis",
+                        "Demo"
+                    ],
+                    name: 'Metrics'
                 },
                 {
                     id: 2,
                     icon: faDatabase,
-                    active: false
+                    active: false,
+                    content: [
+                        `Nothing here yet...`
+                    ],
+                    name: 'Database'
                 },
                 {
                     id: 3,
                     icon: faBed,
-                    active: false
+                    active: false,
+                    content: [
+                        `Nothing here yet...`
+                    ],
+                    name: 'Bed'
                 }
             ]
         }
