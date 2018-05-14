@@ -1,0 +1,10 @@
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: grey;
+    font-style: italic;
+    font-size: 1.2em
+}
+
+input {
+    width: 100%;
+    padding: .7em
+}

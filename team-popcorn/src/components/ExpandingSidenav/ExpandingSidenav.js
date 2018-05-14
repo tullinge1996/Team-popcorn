@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import './ExpandingSidenav.css'
 
 export default class ExpandingSidenav extends Component {
     render() {
@@ -13,7 +14,7 @@ export default class ExpandingSidenav extends Component {
         return (
             <div style={styles.wrapper}>
                 <form>
-                    <input placeholder="Search" style={styles.input}></input>
+                    <input placeholder="Search"></input>
                 </form>
                 <div style={styles.content}>
                     {contentHeadings}
@@ -26,9 +27,6 @@ export default class ExpandingSidenav extends Component {
 const styles = {
     wrapper: {
         backgroundColor: '#404040',
-    },
-    input: {
-        fontSize: '1.35em'
     },
     content: {
         color: '#F8F8F8',

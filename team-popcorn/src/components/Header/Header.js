@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import faBell from '@fortawesome/fontawesome-free-solid/faBell'
 import faInfoCircle from '@fortawesome/fontawesome-free-solid/faInfoCircle'
-import granditudeLogo from '../img/granditude-logo-white-responsive.svg'
-import AwesomeIcon from './AwesomeIcon'
+import granditudeLogo from './granditude-logo-white-responsive.svg'
+import AwesomeIcon from '../AwesomeIcon/AwesomeIcon'
 
 
 export default class Header extends Component {

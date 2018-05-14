@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import Header from './/Header'
-import Sidenav from './Sidenav'
-import Content from './Content'
-import ExpandingSidenav from './ExpandingSidenav'
+import Header from '../Header/Header'
+import Sidenav from '../Sidenav/Sidenav'
+import Content from '../Content/Content'
+import ExpandingSidenav from '../ExpandingSidenav/ExpandingSidenav'
 
 export default class App extends Component {
     constructor(props) {

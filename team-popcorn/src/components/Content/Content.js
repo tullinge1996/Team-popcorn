@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import ShortcutItem from './ShortcutItem'
+import ShortcutItem from '../ShortcutItem/ShortcutItem'
 
 export default class Content extends Component {
     render() {

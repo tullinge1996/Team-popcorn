@@ -3,7 +3,7 @@ import faChartBar from '@fortawesome/fontawesome-free-solid/faChartBar'
 import faDatabase from '@fortawesome/fontawesome-free-solid/faDatabase'
 import faPowerOff from '@fortawesome/fontawesome-free-solid/faPowerOff'
 import faBed from '@fortawesome/fontawesome-free-solid/faBed'
-import AwesomeIcon from './AwesomeIcon'
+import AwesomeIcon from '../AwesomeIcon/AwesomeIcon'
 
 export default class Sidenav extends Component {
     constructor(props){
